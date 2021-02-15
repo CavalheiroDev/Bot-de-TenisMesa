@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto';
+}
+
+.title {
+  text-align: center;
+}
+
+#btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15%;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #4cae4c;
+  color: #fff;
+}
+
+#status {
+  /* margin: 0 auto; */
+  text-align: center;
+  margin-top: 10%;
+}

@@ -1,0 +1,17 @@
+{
+  "name": "bot-de-apostas",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "readline-sync": "^1.4.10",
+    "slimbot": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron": "^11.2.3"
+  }
+}
