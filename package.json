@@ -1,17 +1,17 @@
 {
-  "name": "bot-de-apostas",
+  "name": "bot-de-tenis-mesa",
   "version": "1.0.0",
+  "description": "Monitor de jogos de tenis de mesa na bet365",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
+  "author": "https://github.com/CavalheiroDev/",
+  "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "readline-sync": "^1.4.10",
+    "electron": "^11.2.3",
     "slimbot": "^5.0.0"
-  },
-  "devDependencies": {
-    "electron": "^11.2.3"
   }
 }

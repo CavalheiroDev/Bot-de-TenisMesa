@@ -9,10 +9,10 @@ async function conexaoBet(event, tokenApi, idSport){
   return response;
 }
 
-function bot(message){
+function telegram(message){
   const bot = new slimbot(process.env.TOKEN_TELEGRAM);
 
-  bot.sendMessage(1000081451, message);
+  bot.sendMessage(process.env.USER_ID_TELEGRAM, message);
 }
 
 
@@ -22,7 +22,7 @@ const tokenApi = process.env.TOKEN_API_BET;
 const idSport = '92';
 
 const places = ['7x0', '0x7', '7x1', '1x7', '7x2', '2x7', '10x0', '0x10', '10x1', '1x10' ,'10x2', '2x10',
-                '10x3', '3x10', '10x4', '4x10', '10x5', '5x10'];
+                '10x3', '3x10', '10x4', '4x10', '10x5', '5x10', '0x0'];
 
 const manutent = [];
 
@@ -40,7 +40,7 @@ async function startBot(){
         const scoreGame =  `${scores[scores.length - 1].home}x${scores[scores.length - 1].away}`;
         const message =  `${game.home.name} x ${game.away.name}\n ${scoreGame}`;
         if(places.find(place => place == scoreGame) && !manutent.find(manut => manut == message)){
-          bot(message);
+          telegram(message);
           manutent.push(message);
         }
       } catch (e){
