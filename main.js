@@ -5,11 +5,12 @@ function createWindow () {
     width: 450,
     height: 350,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      contextIsolation: false
     }
   })
 
-  
+  win.setMenu(null)
   win.loadFile('./app/index.html')
 }
 
