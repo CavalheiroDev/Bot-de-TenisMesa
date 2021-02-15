@@ -1,4 +1,5 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+const path = require('path');
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -7,7 +8,8 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false
-    }
+    },
+    icon: path.join(__dirname, 'app/icon.png')
   })
 
   win.setMenu(null)
